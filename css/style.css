@@ -91,6 +91,7 @@ input[type="button"]:hover{
 }
 .find-vehicles h2, .browse-by-type h4, .browse-by-make h4{
   text-align: center;
+  margin: 30px;
 }
 .find-vehicles h5{
   color: #A0A6C5;
@@ -272,6 +273,9 @@ input[type="button"]:hover{
 .copyright p{
   font-size: 14px;
 }
+.customer-says{
+  margin: 30px 0;
+}
 .shadow-effect {
 		    background: #fff;
 		    padding: 10px;
@@ -437,13 +441,12 @@ color: rgba(255, 255, 255, 0.7) !important;
     display: none;
   }
  h2{
-    font-size: 26px;
+    font-size: 24px;
   }
   .browse-by-make, .browse-by-type{
     width: 98% !important;
     margin: 0 auto !important;
    text-align: center;
-
   }
   .browse-by-type .row, .browse-by-make .row{
 
