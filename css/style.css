@@ -4,8 +4,9 @@ body{
 }
 .hero-section{
   background-image: url("assets\background.jpg") !important;
-background-color:#FFD09C;
-  border: 1px solid red;
+
+
+
 }
 .head-padding{
   margin-top: 75px;
@@ -67,8 +68,12 @@ input[type="button"]{
   color: white !important;
   box-shadow: 0 32px 60px rgba(0, 0, 0, .1);
 }
+/*input[type="button"]:hover{
+  color: #337CEF;
+  background-color: white;
+}*/
 input[type="button"]:hover{
-  opacity: 0.8;
+  opacity: .8;
 }
 
 
@@ -232,23 +237,26 @@ input[type="button"]:hover{
 
 }
 .footer img{
-  margin: 10px 0 !important;
+  margin: 4px 0 8px 0;
 }
-
-
+.footer h5{
+  font-size: 16px;
+}
 .footer-head-padding{
-  padding: 20px 0;
+  padding: 10px 0;
+
 }
 
 .footer-subtitle h6{
   padding: 4px 0 !important;
-
-
 }
 .footer a:hover{
   text-decoration: none;
 }
-
+.social-icons{
+  display: flex;
+  flex-direction: row !important;
+}
 .social-icons i{
   height: 30px !important;
   width: 30px !important;
@@ -256,13 +264,46 @@ input[type="button"]:hover{
   border: 1px solid #2C3850;
   border-radius: 50%;
   padding: 6px;
+  margin: 0 6px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
 }
 .twitter-icon{
   color: #337CEF !important;
   border: 1px solid #337CEF !important;
 }
-.social-icons a:hover{
-  opacity: .7;
+.twitter-icon:hover{
+  background-color: #337cef;
+  border: none;
+  color: white !important;
+}
+.facebook-icon{
+  color: #395498 !important;
+  border: 1px solid #395498;
+}
+.facebook-icon:hover{
+  background-color: #395498;
+  border: none;
+  color: white !important;
+}
+.youtube-icon{
+  color: #f30007 !important;
+  border: 1px solid #f30007;
+}
+.youtube-icon:hover{
+  background-color: #f30007;
+  border: none;
+  color: white !important;
+}
+.linkedin-icon{
+  color: #0173af !important;
+}
+.linkedin-icon:hover{
+  background-color: #0173af;
+  color: white !important;
+  border: none;
 }
 
 .copyright{
@@ -336,14 +377,15 @@ input[type="button"]:hover{
 #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
     background: #7E7D7D;
     display: inline-block;
-    height: 10px;
+    height: 8px;
     margin: 0 2px 5px;
     border-radius: 50%;
     transition: all 250ms ease-out 0s;
-    width: 10px;
+    width: 8px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot span:hover{
   background: #3190E7!important;
+  transform: scale(1.4);
 }
 
 
@@ -397,6 +439,10 @@ input[type="button"]:hover{
 
     justify-content: center;
   }
+  .footer-head-padding{
+    margin: 10px 0;
+  }
+
 .login-btn{
  width: 20%;
  text-align: center;
@@ -414,7 +460,11 @@ input[type="button"]:hover{
 .footer{
   text-align: center;
 }
+.social-icons{
+display: flex;
+justify-content: center;
 
+}
 }
 
 
@@ -441,7 +491,7 @@ color: rgba(255, 255, 255, 0.7) !important;
     display: none;
   }
  h2{
-    font-size: 24px;
+    font-size: 20px !important;
   }
   .browse-by-make, .browse-by-type{
     width: 98% !important;
