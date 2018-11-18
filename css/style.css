@@ -43,7 +43,6 @@ body{
 }
 .place-icon{
   font-family: fontawesome;
-  padding: 0 10px;
 }
 input[type="text"]{
   padding: 20px;
@@ -75,6 +74,7 @@ input[type="button"]{
 input[type="button"]:hover{
   opacity: .8;
 }
+
 
 
 .facilities{
@@ -112,16 +112,12 @@ input[type="button"]:hover{
 .browse-by-type p{
   font-size: 12px;
 }
-.column{
-  padding: 20px !important;
-}
+
 .column h5{
-  padding: 10px !important;
   color: #767E86;
 }
 
 .column:hover{
-
   background-color: #E2EFFF;
   box-shadow: 0 32px 60px rgba(0, 0, 0, .1);
 }
@@ -138,7 +134,7 @@ input[type="button"]:hover{
   filter: grayscale(0);
   transform: scale(1.1);
 }
-.browse-by-make div, .browse-by-type div{
+.logos-section div, .type-section div{
   padding: 15px;
   text-align: center;
 }
@@ -162,13 +158,45 @@ input[type="button"]:hover{
   padding: 0 10px;
 }
 .icons .fas{
-  margin-top: -10px !important;
+  margin-top: -5px;
 }
+.hiw .image-display{
+
+  background-color: #337CEF;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+
+}
+
+.image-display img{
+
+  width: 97%;
+
+display: none;
+
+}
+.hiw-responsive{
+  display: none;
+}
+
+
 .how-it-works .row{
  margin: 30px;
 }
 .how-it-works img{
   width: 80%;
+}
+.hiw h2{
+  margin: 70px !important;
+}
+.hiw-content{
+  width: 80% !important;
+  margin: 0 auto !important;
+  padding: 10px;
+}
+.hiw-content h3, .hiw-content h4, .hiw-content p{
+  padding: 10px 0 !important;
 }
 
 
@@ -185,24 +213,40 @@ input[type="button"]:hover{
 .process-steps p{
   width: 80%;
 }
+.process-steps-1 h3{
+  height: 50px;
+  width: 50px;
+  background-color: #EEF7FF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .process-steps h3{
   height: 50px;
   width: 50px;
   background-color: #EEF7FF;
   border-radius: 50%;
-  text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.process-steps a:hover{
+.process-steps a:hover, .process-steps-1 a:hover{
   text-decoration: none;
+
   opacity: 0.8;
 }
+.hover-change{
+  background-color: #337CEF !important;
+  color: white;
+}
+
 .bg-color{
 
   background-color: #086CE6;
 }
+
 .questions-contact{
   width: 80%;
   margin: 0 auto !important;
@@ -250,6 +294,10 @@ input[type="button"]:hover{
 .footer-subtitle h6{
   padding: 4px 0 !important;
 }
+.footer-color a{
+
+  color: #647493;
+}
 .footer a:hover{
   text-decoration: none;
 }
@@ -257,14 +305,15 @@ input[type="button"]:hover{
   display: flex;
   flex-direction: row !important;
 }
-.social-icons i{
+
+.social-icons img{
   height: 30px !important;
   width: 30px !important;
   color: #2C3850;
   border: 1px solid #2C3850;
   border-radius: 50%;
-  padding: 6px;
-  margin: 0 6px !important;
+  padding: 4px;
+  margin: 0 4px !important;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
@@ -280,7 +329,6 @@ input[type="button"]:hover{
   color: white !important;
 }
 .facebook-icon{
-  color: #395498 !important;
   border: 1px solid #395498;
 }
 .facebook-icon:hover{
@@ -291,6 +339,10 @@ input[type="button"]:hover{
 .youtube-icon{
   color: #f30007 !important;
   border: 1px solid #f30007;
+}
+a svg:hover .facebook-icon,
+a svg:hover #instagram {
+  fill: white;
 }
 .youtube-icon:hover{
   background-color: #f30007;
@@ -315,56 +367,59 @@ input[type="button"]:hover{
   font-size: 14px;
 }
 .customer-says{
-  margin: 30px 0;
+  margin: 70px 0;
 }
-.shadow-effect {
-		    background: #fff;
-		    padding: 10px;
+
+.shadow-effect .col-4{
+  padding: 0;
+  margin: 0;
+}
+
+.owl-carousel .para{
+  top: 5%;
+  position: absolute;
+  margin: 6px 20px;
+  padding: 0 10px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.personal-details{
+  bottom: 3%;
+  position: absolute;
+  margin: 6px 20px;
+  padding: 0 10px;
+
+}
+/*.carousel-image img{
+  padding: 0;
+  margin: 0 !important;
+}*/
+.carousel-image{
+  height: 220px;
+
+    clip-path: polygon(100% 0%, 0% 0%, 30% 100%, 100% 100%);
+}
+.shadow-effect
+{
+        background: #E2EFFF;
 		    border-radius: 4px;
-        margin-left: 15%;
-		    text-align: center;
-      	border:1px solid #ECECEC;
-        height: 350px;
-        width: 300px;
-		    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
-      position: relative;
+        height: 220px;
+        width: 500px;
+        position: relative;
 		}
+    .testimonial-name{
+  margin-bottom: -1px;
 
-    .owl-carousel{
-      text-align: center !important;
-    }
-		#customers-testimonials .shadow-effect p {
-		    font-size: 17px;
-		    margin: 0 0 17px 0;
 
-		}
-    .img-circle{
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
+      font-size: 18px;
     }
-		.testimonial-name {
-		    background: #3190E7;
-		    padding: 10px;
-		    border-radius: 12px;
-		    text-align: center;
-		    color: #fff;
-        bottom: 10%;
-        right: 25%;
-        position: absolute;
-		    box-shadow: 0 9px 18px rgba(0,0,0,0.12);
-		}
+.owl-carousel img{
+  height: 220px;
+}
+
 		#customers-testimonials .item {
-		    text-align: center;
 				margin-bottom:80px;
-		}
-		#customers-testimonials .owl-item.active.center .item {
-		    opacity: 1;
-		}
-		.owl-carousel .owl-item img {
-
-		    max-width: 90px;
-    		margin: 0 auto 17px;
 		}
 
 #customers-testimonials.owl-carousel .owl-dots{
@@ -378,7 +433,7 @@ input[type="button"]:hover{
     background: #7E7D7D;
     display: inline-block;
     height: 8px;
-    margin: 0 2px 5px;
+    margin: 0 5px 5px;
     border-radius: 50%;
     transition: all 250ms ease-out 0s;
     width: 8px;
@@ -404,7 +459,12 @@ input[type="button"]:hover{
  .hero-content{
    margin-left: 30px;
  }
-
+ .hiw-large{
+   display: none;
+ }
+.hiw-responsive{
+  display: block;
+}
 
 
   .facilities{
@@ -457,13 +517,13 @@ input[type="button"]:hover{
   justify-content: space-around;
 }
 
+
 .footer{
   text-align: center;
 }
 .social-icons{
 display: flex;
 justify-content: center;
-
 }
 }
 
@@ -490,9 +550,7 @@ color: rgba(255, 255, 255, 0.7) !important;
   input[type="text"]{
     display: none;
   }
- h2{
-    font-size: 20px !important;
-  }
+
   .browse-by-make, .browse-by-type{
     width: 98% !important;
     margin: 0 auto !important;
@@ -518,4 +576,5 @@ color: rgba(255, 255, 255, 0.7) !important;
 .login-btn{
   width: 100%;
  box-shadow: none;
+}
 }
