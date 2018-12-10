@@ -1,29 +1,56 @@
 
-       $(document).ready(function(){
-         $(".link-image1").hover(function(){
+
+   $(document).ready(function() {
+       $(".first-hover h3").addClass("hover-change");
+         $(".first-hover").hover(function(){
+
+                $(".first-hover h3").addClass("hover-change");
+                $(".second-hover h3").removeClass("hover-change");
+                   $(".third-hover h3").removeClass("hover-change");
+                      $(".fourth-hover h3").removeClass("hover-change");
+
            $('.first').show();
            $('.third').hide();
            $('.second').hide();
            $('.fourth').hide();
+
          });
 
 
 
-         $(".link-image2").hover(function(){
+         $(".second-hover").hover(function(){
+              $("img").removeClass("active");
+
+             $(".first-hover h3").removeClass("hover-change");
+              $(".second-hover h3").addClass("hover-change");
+             $(".third-hover h3").removeClass("hover-change");
+             $(".fourth-hover h3").removeClass("hover-change");
+
            $('.second').show();
            $('.third').hide();
            $('.first').hide();
            $('.fourth').hide();
+
          });
 
 
-         $(".link-image3").hover(function(){
+         $(".third-hover").hover(function(){
+             $("img").removeClass("active");
+                 $(".first-hover h3").removeClass("hover-change");
+                 $(".second-hover h3").removeClass("hover-change");
+                 $(".third-hover h3").addClass("hover-change");
+             $(".fourth-hover h3").removeClass("hover-change");
            $('.third').show();
            $('.second').hide();
            $('.first').hide();
            $('.fourth').hide();
          });
-         $(".link-image4").hover(function(){
+         $(".fourth-hover").hover(function(){
+            $("img").removeClass("active");
+                 $(".first-hover h3").removeClass("hover-change");
+                    $(".second-hover h3").removeClass("hover-change");
+                       $(".third-hover h3").removeClass("hover-change");
+             $(".fourth-hover h3").addClass("hover-change");
            $('.fourth').show();
            $('.third').hide();
            $('.first').hide();
@@ -35,58 +62,47 @@
 
 
 
+
 jQuery(document).ready(function($) {
         		"use strict";
 
 		        $('#customers-testimonials').owlCarousel({
 		            loop: true,
 
-		            items: 3,
-		            margin: 20,
+		            items: 4,
+                margin: 20,
 		            autoplay: true,
 		            dots:true,
 		            autoplayTimeout: 8500,
 		            smartSpeed: 450,
-            
+
 		            responsive: {
                   0: {
                     items: 1
                   },
-                  600: {
+                  480: {
 		                items: 1,
-                    center: true,
-                   margin: 30
-
 		              },
 		              768: {
 		                items: 1,
-                    margin: 50,
-                     autoWidth: true
-
-		              },
-		              1170: {
+                    margin: 20,
+                    center: true,
+                    autoWidth: true,
+                    touchDrag: false
+              },
+		              1199: {
 		                items: 2,
+                    margin: 20,
 
-                    margin: 20
 		              }
+
 		            }
 		        });
         	});
 
-          $(document).ready(function(){
-        $(".link-image1").hover(function(){
-            $(".first-hover h3").toggleClass("hover-change");
-        });
-
-        $(".link-image2").hover(function(){
-            $(".second-hover h3").toggleClass("hover-change");
-        });
-
-        $(".link-image3").hover(function(){
-            $(".third-hover h3").toggleClass("hover-change");
-        });
-
-        $(".link-image4").hover(function(){
-            $(".fourth-hover h3").toggleClass("hover-change");
-        });
-    });
+          /*
+          No use bootstrap js library
+          */
+          $(document).ready(function() {
+            $(".dropdown-toggle").dropdown();
+          });
